@@ -1,21 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { WelcomScreen } from './src/components/PlayAround/WelcomScreen';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>New</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default class App extends React.Component {
+	render() {
+		return (
+			<View style={styles.container}>
+				<WelcomScreen />
+			</View>
+		);
+	}
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+	container: {
+		flex: 1,
+		backgroundColor: '#fff',
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
 });
