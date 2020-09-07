@@ -1,16 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { PlatformTouchable } from './src/components/PlatformTouchable';
+import { AppButton } from './src/components/AppButton';
+import {Counter} from './src/components/PlayAround/Counter'
 
 export default class App extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<PlatformTouchable>
-					<Text>Click ME Now</Text>
-				</PlatformTouchable>	
+				<Counter />
 			</View>
-		);
+		)
 	}
 }
 
