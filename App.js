@@ -1,15 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { AppButton } from './src/components/AppButton';
-import {Counter} from './src/components/PlayAround/Counter'
-
+import { AddToCartButton } from './src/components/AddTOCartButton';
 export default class App extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Counter />
+				<AddToCartButton />
 			</View>
-		)
+		);
 	}
 }
 
@@ -21,6 +19,6 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 	},
 	text: {
-		color:'gold',
+		color: 'gold',
 	},
 });
